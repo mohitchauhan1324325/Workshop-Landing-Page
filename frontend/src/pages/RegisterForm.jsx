@@ -48,7 +48,7 @@ export default function RegisterForm() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/enquiry",
+        `${import.meta.env.VITE_URI}/api/enquiry`,
         formData
       );
 
